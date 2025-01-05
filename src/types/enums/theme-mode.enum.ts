@@ -1,6 +1,4 @@
-// types/enums/theme-mode.enum.ts
-
-export enum ThemeMode {
+export enum ThemeModeEnum {
   DARK = 'dark',
   LIGHT = 'light',
 }
