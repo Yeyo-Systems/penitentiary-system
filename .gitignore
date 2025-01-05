@@ -396,3 +396,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.idea/
+.idea/misc.xml
+.idea/modules.xml
+.idea/penitentiary-system.iml
+.idea/vcs.xml

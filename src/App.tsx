@@ -1,19 +1,18 @@
-// App.tsx
-
 import { CssBaseline, ThemeProvider } from '@mui/material';
 
+import { TestComponent } from './TestComponent';
+
+import { useAppSelector } from './store';
 import { darkTheme, lightTheme } from './theme';
-import { ThemeMode } from './types';
+import { ThemeModeEnum } from './types';
 
 export const App = () => {
-  // Por ahora establecemos el tema de forma "manual"
-  // hasta que lo obtengamos del store con un selector
-  const themeMode = ThemeMode.LIGHT;
+  const { themeMode } = useAppSelector((state) => state.ui);
 
   return (
-    <ThemeProvider theme={themeMode === ThemeMode.LIGHT ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themeMode === ThemeModeEnum.LIGHT ? lightTheme : darkTheme}>
       <CssBaseline />
-      <div>React App From Scratch</div>
+      <TestComponent />
     </ThemeProvider>
   );
 };
