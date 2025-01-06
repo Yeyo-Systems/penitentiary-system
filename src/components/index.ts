@@ -1,3 +1,3 @@
 export * from './loader/Loader';
-export * from './toggle-theme-mode/ToggleThemeMode';
-export * from './user-card/UserCard';
+export * from './logout-button/LogoutButton';
+export * from './toggle-theme-mode-button/ToggleThemeModeButton';

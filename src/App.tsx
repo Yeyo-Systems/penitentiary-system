@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 
-import { TestComponent } from './TestComponent';
+import { AppRoutes } from './routes';
 
 import { useAppSelector } from './store';
 import { darkTheme, lightTheme } from './theme';
@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <ThemeProvider theme={themeMode === ThemeModeEnum.LIGHT ? lightTheme : darkTheme}>
       <CssBaseline />
-      <TestComponent />
+      <AppRoutes />
     </ThemeProvider>
   );
 };
