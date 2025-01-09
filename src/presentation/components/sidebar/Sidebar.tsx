@@ -1,7 +1,7 @@
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 import { AdminPanelSettingsOutlined, DashboardOutlined } from '@mui/icons-material';
-import { Drawer as MuiDrawer, Divider, List, Box, ListItemText, ListItemButton, ListItemIcon } from '@mui/material';
+import { Box, Divider, Drawer as MuiDrawer, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import { useAppSelector } from '../../../store';
