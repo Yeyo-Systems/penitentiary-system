@@ -1,14 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { PrivateRoute } from './components';
 import { ADMIN_POLICY, USER_POLICY } from './constants';
 
-import { MainLayout, SimpleLayout } from '../layouts';
+import { MainLayout, SimpleLayout } from '../presentation/pages/layouts';
 
-import { AdminTestPage } from '../areas/admin';
-import { DashboardPage } from '../areas/app';
-import { LoginPage } from '../areas/auth';
-import { PageNotFoundPage } from '../areas/common';
+import { AdminTestPage, LoginPage, PageNotFoundPage } from '../presentation/pages';
+import { DashboardPage } from '../presentation/pages/';
 
 export const AppRoutes = () => {
   return (
